@@ -1,0 +1,46 @@
+{
+    "model_type": "lightgbm",
+    "features": [
+        "depense_totale",
+        "depense_prev",
+        "lag_1",
+        "lag_2",
+        "lag_3",
+        "rolling_mean_3",
+        "salaire",
+        "loyer",
+        "nb_enfants",
+        "profil_code",
+        "tier_code",
+        "month",
+        "quarter",
+        "periode_fetes",
+        "time_idx"
+    ],
+    "best_params": {
+        "subsample": 0.85,
+        "reg_lambda": 10.0,
+        "reg_alpha": 0.5,
+        "num_leaves": 40.0,
+        "n_estimators": 500.0,
+        "min_split_gain": 0.0,
+        "min_data_in_leaf": 500.0,
+        "min_child_samples": 20.0,
+        "learning_rate": 0.05,
+        "colsample_bytree": 1.0
+    },
+    "train_cutoff": "2024-07",
+    "validation_cutoff": "2024-10",
+    "metrics_test": {
+        "mae": 198.60212875901698,
+        "rmse": 283.98118629949136,
+        "r2": 0.9451757988638363,
+        "mape": 8.131963159836952
+    },
+    "metrics_validation": {
+        "mae": 205.61309870708004,
+        "rmse": 291.38854051874955,
+        "r2": 0.9437682989292464,
+        "mape": 8.365131952396023
+    }
+}
